@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodosComponent implements OnInit {
 
+  name: string="";
+  todos: string[]=[];
+
   constructor() { }
 
-  ngOnInit(): void {
+
+  ngOnInit() {
+    this.todos = ["1-я задача", "2-я задача", "3-я задача"];
+    this.name = 'Задачи';
   }
 
 }
