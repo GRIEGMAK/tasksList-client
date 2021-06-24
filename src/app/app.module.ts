@@ -3,12 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
+import { ReactiveFormsModule } from '@angular/forms'
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { ListComponent } from './list/list.component';
 import { TodosComponent } from './todos/todos.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +23,9 @@ import { TodosComponent } from './todos/todos.component';
     BrowserAnimationsModule, 
     MatToolbarModule, 
     MatIconModule,
-    MatListModule
+    MatListModule,
+    ReactiveFormsModule, 
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
