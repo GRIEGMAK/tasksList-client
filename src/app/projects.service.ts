@@ -16,6 +16,9 @@ export class ProjectsService {
     .subscribe(response=>{
       this.response = response;
       console.log(this.response)
-    })
+    },
+    error => {
+      console.log(error);
+  })
   }
 }
